@@ -6,4 +6,4 @@
   #define FALSE 1
 #endif
 
-int file_content_read(const char *filename, char *buf, int max_size);
+int file_content_read_as_string(const char *filename, char *buf, int max_size);

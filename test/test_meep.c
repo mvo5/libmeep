@@ -1,4 +1,6 @@
 #include<assert.h>
+#include<string.h>
+
 #include "meep.h"
 
 int main(int argc, char **argv)
@@ -8,4 +10,6 @@ int main(int argc, char **argv)
 
    assert(file_content_read_as_string("test_meep.data", buf, sizeof(buf)) == TRUE);
    assert(strcmp(buf, "12345") == 0);
+
+   return 0;
 }

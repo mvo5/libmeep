@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-CFLAGS = -I..
+CFLAGS = -I.. -g -O2 -Wall -Werror
 
 
 test: *.c ../meep.c

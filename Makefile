@@ -1,6 +1,8 @@
 #!/usr/bin/make -f
 
+CFAGS = -Wall -Werror -O2
+
 all:
 %.o: *.c
-	gcc -ggdb -g3 -O0 -o $@ $<
+	gcc $(CFLAGS) -o $@ $<
 
