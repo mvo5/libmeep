@@ -19,8 +19,10 @@ libmeep.a: $(OBJECTS)
 	$(CC) -c $(CFLAGS) $(LIBS) $(LDFLAGS) -o $@ $<
 
 test: libmeep.a
-	(cd test; make && ./test)
+	(cd tests; make && ./test)
 
 clean:
 	rm -f libmeep.a *.o
 
+
+.PHONY = test clean

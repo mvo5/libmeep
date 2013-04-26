@@ -1,5 +1,6 @@
 #include<assert.h>
 #include<string.h>
+#include<stdio.h>
 
 #include "meep.h"
 
@@ -32,5 +33,6 @@ int main(int argc, char **argv)
    test_file_content_read_as_string();
    test_str_rstrip();
 
+   printf("\n\nAll test are OK\n\n");
    return 0;
 }
