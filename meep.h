@@ -7,3 +7,4 @@
 #endif
 
 int file_content_read_as_string(const char *filename, char *buf, int max_size);
+void str_rstrip(char *input);
