@@ -26,6 +26,15 @@ void test_str_rstrip()
    char buf3[] = "";
    str_rstrip(buf3);
    assert(strlen(buf3) == 0);
+
+   char buf4[] = "\0\1";
+   str_rstrip(buf4);
+   assert(buf4[0] == '\0' && 
+          buf4[1] == '\1');
+
+   char buf5[] = "  \n \t";
+   str_rstrip(buf5);
+   assert(strlen(buf5) == 0);
 }
 
 int main(int argc, char **argv)

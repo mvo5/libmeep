@@ -30,9 +30,9 @@ int file_content_read_as_string(const char *filename, char *buf, int max_size)
 void str_rstrip(char *input)
 {
    int i = strlen(input);
-      while(i > 0 && 
-            (input[i] == '\0' || input[i] == '\n' || input[i] == ' ' ||
-             input[i] == '\t'))
-         i--;
+   while(i >= 0 && (input[i] == '\0' || input[i] == '\n' || 
+                    input[i] == ' '  ||  input[i] == '\t')) {
+      i--;
+   }
    input[i+1] = 0;
 }
